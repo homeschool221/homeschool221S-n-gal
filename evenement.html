@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- meta tags-->
+  <title>Evenement | Home School</title>
+  <meta name="title" content="Accueil | Home School">
+  <meta name="author" content="Home School">
+  <meta name="keywords" content="Home School, Formation, Informatique, Bureautique, Développement Web, Design, Photoshop, Illustrator, Excel, Word, PowerPoint, Java, HTML, CSS, JavaScript, Frameworks, WordPress, Camtasia, Content Creators, Blogger, Content Planning, Apprenants, Formateurs, Evenements, Cours, Modules, Salle de Cours, Temoignages, Newsletter, Réseaux Sociaux">
+  <meta name="robots" content="index, follow">
+  <meta name="revisit-after" content="3 days">
+  <meta name="language" content="French">
+  <meta name="generator" content="Home School">
+  <meta name="distribution" content="global">
+  <meta name="rating" content="general">
+  <meta name="audience" content="all">
+  <meta name="googlebot" content="index, follow">
+  <meta name="bingbot" content="index, follow">
+  <meta name="yahoobot" content="index, follow">
+  <meta name="description" content="Home School">
+
+  <!-- le favicon-->
+  <link rel="shortcut icon" href="assets/images/favicon.png" type="image/svg+xml">
+
+  <!--link de css-->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--link de google font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <!-- chargement d'image-->
+  <link rel="preload" as="image" href="./assets/images/hero-bg.png">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-1.png">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-2.png">
+  <link rel="preload" as="image" href="./assets/images/hero-shape-1.png">
+  <link rel="preload" as="image" href="./assets/images/hero-shape-2.png">
+  <style>
+    /* Events Section */
+    .events {
+      padding: 50px;
+      background-color: #060691;
+      color: #fff;
+    }
+
+    .events h2 {
+      text-align: center;
+      color: #d3e606;
+      margin-bottom: 10px;
+    }
+
+    .event-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    
+    .event-card {
+      background-color: #fff;
+      color: #060691;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      width: 300px;
+      text-align: center;
+    }
+
+    .event-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .event-card h3 {
+      font-size: 1.5rem;
+      margin: 15px 0;
+    }
+    
+    .event-card p {
+      font-size: 1rem;
+      padding: 0 15px;
+      margin-bottom: 15px;
+    }
+
+    .event-card a {
+      display: inline-block;
+      margin-bottom: 15px;
+      padding: 10px 20px;
+      background-color: #060691;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .event-card a:hover {
+      background-color: #d3e606;
+      color: #060691;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .event-list {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .event-card {
+        width: 100%;
+        max-width: 400px;
+      }
+    }
+
+
+
+  </style>
+
+</head>
+
+<body id="top">
+
+  <!-- DEBUT HEADER -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/logo.png" width="80px" height="30" alt="Home School Logo">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="wrapper">
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.png" width="80px" height="30" alt="Home School Logo">
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="index.html" class="navbar-link"  data-nav-link>Accueil</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="apropos.html" class="navbar-link" data-nav-link>A propos</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="formations.html" class="navbar-link" data-nav-link>Nos Formations</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#Evènements" class="navbar-link" style="border-bottom: 3px solid #060691;" data-nav-link>Evènements</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="contact.html" class="navbar-link" data-nav-link>Contact</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <div class="header-actions">
+
+        <a href="https://meet.google.com/soq-wdyt-zhn" class="btn has-before">
+          <span class="span" style="color: #060691;font-size: 15px;">Salle de Cours</span>
+
+          <ion-icon name="arrow-forward-outline" aria-hidden="true" style="color: #060691;font-size: 18px;"></ion-icon>
+        </a>
+
+        <button class="header-action-btn" aria-label="open menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true" style="color: #060691;font-size: 38px;"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+  <!-- FIN HEADER -->
+<main>
+    <article style="margin-top: 2rem;">
+        <section class="events" style="margin-top: 6rem;">
+            <h2 style="color: #fff;margin-top: 3rem;margin-bottom: 2rem;">Nos Événements</h2>
+            <div class="event-list">
+              <!-- Event Card 1 -->
+              <a href="assets/images/even1.jpg">
+              <div class="event-card" style="border: 2px solid #fff;border-radius: 12px;box-shadow: 0 4px 6px black;">
+                <img src="./assets/images/even1.jpg" alt="Événement 1">
+                <h3>MasterClass En Informatique Bureautique</h3>
+                <h6 style="margin-top: -10px;background: #060691;color: #fff;
+                padding: 5px 1px;
+                border-radius: 5px;margin-right: 15px;margin-left: 15px;">
+                    Le 22 Mars 2025 à L'ENO De Kaolack
+                </h6>
+                <p>Cette masterclass est spécialement conçue pour les étudiants en sociologie qui souhaitent acquérir des compétences bureautiques essentielles pour leurs études et leur future carrière. Que ce soit pour rédiger un rapport de mémoire, concevoir un CV percutant, rédiger une lettre de motivation convaincante, ou analyser des données avec des tableaux croisés dynamiques, cette formation vous fournira les outils et techniques nécessaires pour exceller.
+                </p>
+              </div>
+            </a>
+              <a href="assets/images/even2.jpg" >
+              <div class="event-card" style="border: 2px solid #fff;border-radius: 12px;box-shadow: 0 4px 6px black;">
+                <img src="./assets/images/even2.jpg" alt="Événement 1">
+                <h3>Ramadan Numérique</h3>
+                <h6 style="margin-top: -10px;background: #060691;color: #fff;
+                padding: 5px 1px;
+                border-radius: 5px;margin-right: 15px;margin-left: 15px;">
+                    De 02 Mars 2025 à 02 Avril 2025
+                </h6>
+                <p>Le Ramadan Numérique est un bootcamp innovant conçu pour vous aider à maximiser votre productivité tout en respectant les spécificités du mois de Ramadan. Que vous soyez étudiant, professionnel ou entrepreneur, ce programme vous propose des outils et des techniques pour rester efficace, organisé et connecté, tout en profitant pleinement de cette période spirituelle.</p>
+              </div>
+            </a>
+              <a href="assets/images/even3.JPG">
+              <div class="event-card"style="border: 2px solid #fff;border-radius: 12px;box-shadow: 0 4px 6px black;">
+                <img src="./assets/images/even3.JPG" alt="Événement 1">
+                <h3>Journée Porte Ouverte & Remise d'attestation</h3>
+                <h6 style="margin-top: -10px;background: #060691;color: #fff;
+                padding: 5px 1px;
+                border-radius: 5px;margin-right: 15px;margin-left: 15px;">
+                    Le 21 Decembre 2025
+                </h6>
+                <p>Cette journée portes ouvertes est l’occasion idéale pour découvrir les clés essentielles afin de perfectionner votre profil professionnel et vous démarquer sur le marché de l’emploi. Que vous soyez étudiant, jeune diplômé ou en reconversion professionnelle, cet événement vous propose des ateliers pratiques, des conseils d’experts et des ressources pour booster votre employabilité.</p>
+              </div>
+            </a>
+              <a href="assets/images/even4.jpg">
+              <div class="event-card" style="border: 2px solid #fff;border-radius: 12px;box-shadow: 0 4px 6px black;">
+                <img src="./assets/images/even4.jpg" alt="Événement 1">
+                <h3>Masterclass en wordpress</h3>
+                <h6 style="margin-top: -10px;background: #060691;color: #fff;
+                padding: 5px 1px;
+                border-radius: 5px;margin-right: 15px;margin-left: 15px;">
+                    Le 18 Janvier 2025
+                </h6>
+                <p>Cette masterclass en ligne est conçue pour vous guider pas à pas dans la création d’un portfolio professionnel et percutant grâce à WordPress. Que vous soyez un créatif, un développeur, un photographe, un consultant ou un étudiant, cette formation vous permettra de présenter vos réalisations de manière attractive et de vous démarquer dans votre domaine.</p>
+              </div>
+            </a>
+              <a href="assets/images/even5.jpg">
+              <div class="event-card" style="border: 2px solid #fff;border-radius: 12px;box-shadow: 0 4px 6px black;">
+                <img src="./assets/images/even5.jpg" alt="Événement 1">
+                <h3>Maîtrisez le Webdesign avec Figma</h3>
+                <h6 style="margin-top: -10px;background: #060691;color: #fff;
+                padding: 5px 1px;
+                border-radius: 5px;margin-right: 15px;margin-left: 15px;">
+                    Le 14 Decembre 2024
+                </h6>
+                <p>Cette masterclass en ligne est conçue pour vous apprendre à créer des designs web modernes et professionnels en utilisant Figma, l’outil de design collaboratif le plus populaire du moment. Que vous soyez débutant ou que vous souhaitiez perfectionner vos compétences en design d’interface, cette formation vous guidera pas à pas pour maîtriser Figma et concevoir des prototypes interactifs et esthétiques.</p>
+              </div>
+            </a>
+              <a href="assets/images/even6.jpg">
+              <div class="event-card" style="border: 2px solid #fff;border-radius: 12px;box-shadow: 0 4px 6px black;">
+                <img src="./assets/images/even6.jpg" alt="Événement 1">
+                <h3>Formation Intensive en 72H : Créez un Site LMS </h3>
+                <h6 style="margin-top: -10px;background: #060691;color: #fff;
+                padding: 5px 1px;
+                border-radius: 5px;margin-right: 15px;margin-left: 15px;">
+                    Le 10 Novembre 2024
+                </h6>
+                <p>Cette formation intensive de 72 heures est conçue pour vous apprendre à concevoir et à lancer un site LMS (Learning Management System) professionnel avec WordPress. Que vous soyez formateur, enseignant, entrepreneur ou passionné de e-learning, cette formation vous guidera pas à pas pour créer une plateforme d’apprentissage en ligne complète et fonctionnelle.</p>
+              </div>
+            </a>
+              <a href="assets/images/even7.jpg">
+              <div class="event-card"style="border: 2px solid #fff;border-radius: 12px;box-shadow: 0 4px 6px black;">
+                <img src="./assets/images/even7.jpg" alt="Événement 1">
+                <h3>Journée de Présentation de Projets et de Remise des Attestations</h3>
+                <h6 style="margin-top: -10px;background: #060691;color: #fff;
+                padding: 5px 1px;
+                border-radius: 5px;margin-right: 15px;margin-left: 15px;">
+                    Le 27 Juillet 2024
+                </h6>
+                <p>Cette journée spéciale est dédiée à la présentation des projets réalisés par les participants ainsi qu’à la remise des attestations de fin de formation. C’est l’occasion de célébrer les réussites, de partager les apprentissages et de mettre en lumière les compétences acquises tout au long de la formation. Que vous soyez participant, formateur ou invité, cette journée promet d’être inspirante et enrichissante.</p>
+              </div>
+            </a>
+      
+             
+            </div>
+          </section>
+    </article>
+</main>
+
+  
+
+<!-- debut footer  -->
+
+<footer class="footer" style="background-image: url('./assets/images/footer-bg.png')">
+
+    <div class="footer-top section">
+      <div class="container grid-list">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.png" width="100" height="50" alt="Home School Logo">
+          </a>
+
+          <p class="footer-brand-text">
+            Avec des formations en ligne, en présentiel ou à domicile, nous vous accompagnons pour maîtriser les outils informatiques essentiels, de la bureautique à la programmation. Nos formateurs qualifiés et pédagogues vous guident dans un environnement convivial et professionnel.
+          </p>
+
+          <div class="wrapper">
+            <span class="span">Siège :</span>
+
+            <address class="address">Kaolack - Kasnack</address>
+          </div>
+
+          <div class="wrapper">
+            <span class="span">Téléphone:</span>
+
+            <a href="tel:+221771617044" class="footer-link">77 161 70 44 / 76 686 22 60 </a>
+          </div>
+
+          <div class="wrapper">
+            <span class="span">Email:</span>
+
+            <a href="mailto:contact@homeschool221.com" class="footer-link">contact@homeschool221.com</a>
+          </div>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Plateformes</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">A propos</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Nos Formations</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Nos Formateurs</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Evenements</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Liens</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Accueil</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">A propos</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Nos Formations</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Contacts</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Evenements</a>
+          </li>
+
+        </ul>
+
+        <div class="footer-list">
+
+          <p class="footer-list-title">Contacts</p>
+
+          <p class="footer-list-text">
+            Entrez votre adresse e-mail pour vous inscrire à notre newsletter
+          </p>
+
+          <form action="" class="newsletter-form">
+            <input type="email" name="email_address" placeholder="Ton adresse mail" required class="input-field">
+
+            <button type="submit" class="btn has-before">
+              <span class="span">S'abonner</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </form>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="https://www.facebook.com/profile.php?id=61556890092962" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.linkedin.com/in/home-school-84b167290/" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.instagram.com/homeschoolacademy221/" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.youtube.com/@HOME_SCHOOL221-c1j" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.tiktok.com/@home.school14?is_from_webapp=1&sender_device=pc" class="social-link">
+                <ion-icon name="logo-tiktok"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          Copyright 2025 Tout droits réservés par <a href="#" class="copyright-link">Home School</a>
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+<!-- fin footer  -->
+
+
+
+ <!-- Retour en haut de la page  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back top top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+<!-- link javascript  -->
+  <script src="./assets/js/script.js" defer></script>
+
+ <!-- link ionicons -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
